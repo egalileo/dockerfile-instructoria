@@ -1,4 +1,4 @@
-FROM ubuntu:18:04
+FROM ubuntu:18.04
 
 LABEL Version="1.0"
 LABEL descripcion="Ejercicio Dockerfile dsi"
@@ -10,15 +10,16 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y nginx && \
     apt-get install -y git && \
-    apt install -y curl && \
-    curl -fsSl https://deb.nodesource.com/setup_16.x | tac | tac | bash - && \
-    apt-get install -y nodejs && \
+    apt install -y curl &&\
+    curl -fsSl https://deb.nodesource.com/setup_16.x | tac | tac | bash - &&\
+    apt-get install -y nodejs &&\
     npm install -g @quasar/cli && \
     git clone https://github.com/egalileo/dockerfile-instructoria.git && \
+    cd /home/dockerfile-instructoria &&\
     git checkout main && \
     npm install && \
     quasar build && \
-    cp -r dist/spa* /var/ww/html && \
+    cp -r dist/spa/* /var/www/html && \
     apt-get clean && \
     rm -rf /var/lib/apt/list/*
 
