@@ -1,11 +1,11 @@
 <template>
   <div class="q-pa-md">
-    <q-layout view="lHh LpR fFf">
+    <q-layout view="lHh Lpr lFf">
       <q-header elevated class="bg-primary">
         <!--bg-cyan-10-->
         <q-toolbar>
           <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
-          <q-toolbar-title>Diseño de Sistemas I </q-toolbar-title>
+          <q-toolbar-title>Diseño de Sistemas </q-toolbar-title>
         </q-toolbar>
       </q-header>
 
@@ -55,16 +55,16 @@
 
         <q-card flat class="absolute-top">
           <q-img
-            src="https://wallpapersfortech.com/elden-ring-wallpaper-4k/elden-ring-wallpaper"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFepI5264t3kZ4vdIKGe17pwOVQ65UW0EDIw&usqp=CAU"
             style="width: 300px; height: 150px"
           >
             <div class="absolute-bottom bg-transparent">
               <q-avatar size="56px" class="q-mb-sm">
                 <img
-                  src="https://avatars.akamai.steamstatic.com/9241fd4504e75a49aec4aa4114b1ff856ffa46a1_full.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSheYo_o7D4VvImtBM3K73roWBkWIhF3EDIzg-g7jglG-1Cf59c8lXcY060Nnrn715Uv7U&usqp=CAU"
                 />
               </q-avatar>
-              <div class="text-weight-bold">Erick Galileo Padilla</div>
+              <div class="text-weight-bold">Henry Rolando Cardona Valle</div>
             </div>
           </q-img>
         </q-card>
